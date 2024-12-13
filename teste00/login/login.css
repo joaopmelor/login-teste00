@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    background-image: linear-gradient(to right, #d17d00, #16160e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    z-index: 1;
+    color: aliceblue;
+    position: absolute;
+    width: 60%;
+    background-color: #113;
+    padding: 15px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 3px solid #f17f00;
+    border-radius: 0 0 15px 15px;
+}
+
+legend {
+    border: 3px solid  #f17f00;
+    border-radius: 15px;
+    padding: 10px;
+    width: 15rem;
+    text-align: center;
+    background-color:  #113;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.inputForm {
+    position: relative;
+}
+
+.user {
+    background: none;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    color: aliceblue;
+    font-size: 15px;
+    width: 100%;
+}
+
+.label-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.user:focus ~ .label-input,
+.user:valid ~ .label-input{
+    top: -20px;
+    font-size: 12px;
+    color: #f17f00;
+}
+
+#verificar-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#verificar {
+    font-family: Tahoma, sans-serif;
+    
+    background-color: #f17f00;
+    position: relative;
+    width: 25%;
+    border: none;
+    padding: 9px;
+    color: #11301f;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#verificar:active{
+    background-color:  aliceblue;
+    width: 24%;
+}
+
+.cadastrolink {
+    width: 100%;
+    text-align: center;
+    font-size: 85%;
+
+    a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    a:hover {
+        color: #f17f00;
+    }
+
+    a:active {
+        font-size: 80%;
+        color: #f17f00;
+    }
+}

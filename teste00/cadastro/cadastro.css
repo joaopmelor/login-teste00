@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    background-image: linear-gradient(to bottom left, #00005f, #100e16);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    color: azure;
+    position: absolute;
+    width: 60%;
+    background-color: #00001f;
+    padding: 15px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 3px solid #f2f222;
+    border-radius: 0 0 15px 15px;
+}
+
+legend {
+    border: 3px solid  #f2f222;
+    border-radius: 15px;
+    padding: 10px;
+    width: 15rem;
+    text-align: center;
+    background-color:  #000033;
+    color: azure;
+    font-weight: bold;
+}
+
+.inputForm {
+    position: relative;
+}
+
+.user {
+    background: none;
+    border: none;
+    border-bottom: 1px solid azure;
+    color: azure;
+    font-size: 15px;
+    width: 100%;
+}
+
+.label-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.user:focus ~ .label-input,
+.user:valid ~ .label-input{
+    top: -20px;
+    font-size: 12px;
+    color: #f2f222;
+}
+
+#enviar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#submit {
+    font-family: Tahoma, sans-serif;
+    
+    background-color: #f2f222;
+    position: relative;
+    width: 50%;
+    border: none;
+    padding: 7px;
+    color: #00001f;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:active{
+    background-color:  azure;
+    width: 49%;
+}
+
+.loginlink {
+    width: 100%;
+    text-align: center;
+    font-size: 85%;
+
+    a {
+        text-decoration: none;
+        color: azure;
+    }
+
+    a:hover {
+        color: #f2f222;
+    }
+
+    a:active {
+        font-size: 80%;
+        color: #f2f222;
+    }
+}
